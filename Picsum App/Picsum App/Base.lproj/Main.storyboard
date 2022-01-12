@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="pictureCell" id="7vS-bt-zqB" customClass="PicsumCollectionViewCell" customModule="Picsum_App" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="pictureCell" reuseIdentifier="pictureCell" id="7vS-bt-zqB" customClass="PicsumCollectionViewCell" customModule="Picsum_App" customModuleProvider="target">
                                         <rect key="frame" x="79" y="0.0" width="256" height="164.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OJy-fD-vSO">
@@ -73,6 +73,9 @@
                             <constraint firstItem="SBr-0G-cu0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sr5-dZ-MJz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="SBr-0G-cu0" id="hGq-2B-MJb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
