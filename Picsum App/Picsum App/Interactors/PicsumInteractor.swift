@@ -17,14 +17,15 @@ class PicsumInteractor {
     
     let baseUrl = "https://picsum.photos/v2/"
     
-    let shared = PicsumInteractor()
+    static let shared = PicsumInteractor()
     
-    func retrieveImages(callback: @escaping PicsumModelResponse) {
-        guard let url = URL(string: baseUrl + "list") else {
+    func retrieveImages(limit: Int, callback: @escaping PicsumModelResponse) {
+        let urlString = "\(baseUrl)list?limit=\(limit)"
+        
+        guard let url = URL(string: urlString) else {
             callback(Result.failure(PicsumError(message: "Bad url")))
             return
         }
-        
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
