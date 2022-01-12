@@ -18,6 +18,7 @@
 		06F63065278F58DB00FBA9BB /* Picsum_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F63064278F58DB00FBA9BB /* Picsum_AppUITestsLaunchTests.swift */; };
 		06F63073278F593600FBA9BB /* PicsumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F63072278F593600FBA9BB /* PicsumInteractor.swift */; };
 		06F63078278F59CF00FBA9BB /* PicsumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F63077278F59CF00FBA9BB /* PicsumModel.swift */; };
+		06F6307B278F634A00FBA9BB /* PicsumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6307A278F634A00FBA9BB /* PicsumCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		06F63064278F58DB00FBA9BB /* Picsum_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picsum_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		06F63072278F593600FBA9BB /* PicsumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumInteractor.swift; sourceTree = "<group>"; };
 		06F63077278F59CF00FBA9BB /* PicsumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumModel.swift; sourceTree = "<group>"; };
+		06F6307A278F634A00FBA9BB /* PicsumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicsumCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		06F63040278F58DA00FBA9BB /* Picsum App */ = {
 			isa = PBXGroup;
 			children = (
+				06F63079278F630400FBA9BB /* UI */,
 				06F63074278F59AA00FBA9BB /* Models */,
 				06F63071278F591E00FBA9BB /* Interactors */,
 				06F63041278F58DA00FBA9BB /* AppDelegate.swift */,
@@ -147,6 +150,14 @@
 				06F63077278F59CF00FBA9BB /* PicsumModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		06F63079278F630400FBA9BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				06F6307A278F634A00FBA9BB /* PicsumCollectionViewCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 				06F63073278F593600FBA9BB /* PicsumInteractor.swift in Sources */,
 				06F63042278F58DA00FBA9BB /* AppDelegate.swift in Sources */,
 				06F63044278F58DA00FBA9BB /* SceneDelegate.swift in Sources */,
+				06F6307B278F634A00FBA9BB /* PicsumCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
